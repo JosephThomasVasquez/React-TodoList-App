@@ -1,5 +1,5 @@
 body {
-  background-color: dodgerblue;
+  background-color: rgb(31, 85, 129);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,20 +14,27 @@ code {
 }
 
 .container {
-  background-color: floralwhite;
-  width: 25%;
+  background-color: rgb(240, 249, 255);
+  width: 40%;
+  padding: 0;
   margin: auto;
   border-radius: 20px;
-  box-shadow: 5px 5px ;
+  box-shadow: 5px 5px 10px black;
+  
 }
 
 .title-main {
   text-align: center;
+  background-color: rgb(145, 182, 207);
+  padding: 10px 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .input-item {
-  width: 80%;
-  margin: 10px auto;
+  width: 70%;
+  margin: 10px auto 0.5% 10%;
+  border: none;
+  border-bottom: 1px solid rgb(2, 112, 139);
 }
 
 .user-form {
@@ -35,8 +42,19 @@ code {
   margin: auto;
 }
 
+li {
+  width: 80%;
+  padding: 1%;
+  margin: auto;
+}
+
 button {
   display: table-cell;
-  padding: 0 5%;
-  margin-left: 10px;
+  width: 10%;
+  padding: 0.7% 0;
+  margin: auto 0 auto 5px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(2, 112, 139);
+  color: white;
 }
