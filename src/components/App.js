@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from './Form';
 import Item from './Item';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 
 function App() {
 
@@ -23,15 +24,23 @@ function App() {
 
   };
 
+  function deleteItem(id) {
+    setItems(previousItems => {
+      return previousItems.filter((selectedItem, index) => {
+        return index !== id;
+      })
+    })
+  }
+
   return (
     <div className="App pt-5">
       <div className="container shadow">
-      <h1 className="title-main">Todo List</h1>
+      <h1 className="title-main"><AssignmentIcon fontSize="Large" style={{color: "rgba(255, 255, 255, 0.5)"}}/>Todo List</h1>
       <Form onChange={inputChange} onClick={addItem} value={inputText}/>
       <div>
         <ul>
           {items.map((newItem, index) => (
-            <Item key={index} id={index} text={newItem} onChecked=""/>
+            <Item key={index} id={index} text={newItem} onChecked={deleteItem}/>
             ))}
         </ul>
       </div>
