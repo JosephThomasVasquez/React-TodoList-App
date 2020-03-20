@@ -26,10 +26,17 @@ code {
 }
 
 .input-item {
-  width: 100%;
+  width: 80%;
   margin: 10px auto;
 }
 
 .user-form {
+  padding: 1%;
+  margin: auto;
+}
 
+button {
+  display: table-cell;
+  padding: 0 5%;
+  margin-left: 10px;
 }

@@ -1,8 +1,10 @@
 import React from 'react';
+import App from './App';
 
-function Form() {
-    return (<form action="submit" className="user-form">
+function Form(props) {
+    return (<form className="user-form">
         <input className="input-item" type="text" placeholder="Add Item"/>
+        <button onClick={props.onClick}>Add</button>
     </form>);
 }
 
